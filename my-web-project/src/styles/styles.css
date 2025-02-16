@@ -1,0 +1,106 @@
+/*Elementos que afecta a todos*/
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #2b2b2b;
+    color: #a9b7c6;
+    font-family: 'Circular', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+
+} 
+ 
+.tabular {
+    padding-left: 2em;
+    text-indent: 2em;
+}
+
+/*Accion de cambiar de clase*/
+.content-section {
+    display: none;
+    margin-top: 10px;
+}
+
+.content-section.active {
+    display: block;
+}
+/*Aspecto de botones*/
+.toggle-btn {
+    background-color: #2b2b2b;/* Color de fondo de los botones */
+    color: #a9b7c6;
+    padding: 10px 20px; /* Espaciado interno de los botones */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    margin-right: 0px; /* Espaciado entre los botones */
+    transition: background-color 0.3s; /* Transición suave para el cambio de color */
+    border-bottom: 1px solid #a9b7c6;
+}
+.toggle-btn:hover {
+    color: #82909f;
+}
+
+.toggle-btn.activeBtn {
+    background-color: #2b2b2b; /* Color de fondo del botón activo, igual que el del cuerpo */
+    border-bottom: 3px solid rgb(49, 49, 213);
+}
+/*Configuración de ventanas*/
+.ventanaContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.ventanaCodigo, .ventanaResultado {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top; 
+}
+.ventanaCodigo {
+    max-width: 49%;
+    float: left;
+    padding-top: 20px;
+    margin-left: 25%;
+    margin-bottom: 50px;
+}
+
+@media (max-width: 768px) {
+    .ventanaCodigo, .ventanaResultado {
+        width: 100%;
+        display: block; 
+    }
+}
+
+/*Estilo botón  play*/
+.boton {
+    background-color: #2b2b2b;
+    border-color: #2b2b2b;
+    color: inherit; 
+    border: 1px solid transparent;
+    color: #a9b7c6;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.icono:hover {
+    filter: brightness(0.7);
+}
+
+.icono:active {
+    filter: brightness(0.7);
+}
+/*Aficiones*/
+.aficiones { 
+    background: linear-gradient(to right, #47574f, #8b352f);
+    bottom: 0;
+    left: 0;
+    right: 0;  
+    background-color: #47574f;
+    color: #a9b7c6;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.introduccion h1 {
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+}
+.musicaSpotify {
+    display: flex;
+}

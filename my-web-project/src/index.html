@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Web Project</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/result-styles.css">
+    <link rel="stylesheet" href="styles/color-code-styles.css">
+
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+    <div class="ventanaContainer">
+
+
+        <div class="ventanaCodigo">
+            <button class="toggle-btn activeBtn" data-target="section1">Curriculum.java</button>
+            <button class="toggle-btn" data-target="section2">Estudio.java</button>
+            <button class="toggle-btn" data-target="section3">Experiencia.java</button>
+            <button class="toggle-btn" data-target="section4">Conocimiento.java</button>
+
+            <br>
+            <div id="section1" class="content-section tabular active">
+                <section class="package">
+                    <span class="keyword">package</span>
+                    <span class="namespace">org.curriculum</span>
+                    <span class="operator">;</span>
+                </section>
+                <section class="clase">
+                    <span class="keyword">public</span>
+                    <span class="keyword">class</span>
+                    <span class="class">Curriculum</span>
+                    <span class="operator">{</span>
+                </section>
+                <div class="tabular">
+                    <section class="name">
+                        <span class="keyword">public static</span>
+                        <span class="class">String</span>
+                        <span class="constant">name</span>
+                        <span class="operator">=</span>
+                        <span class="string">"David Santiago Lezama López"</span><span class="operator">;</span>
+                    </section>
+                    <section class="contenido">
+                        <span class="keyword">public static</span>
+                        <span class="class">String</span>
+                        <span class="constant">contenido</span>
+                        <span class="operator">=</span>
+                        <span class="string">"Esta clase ha sido creada para mostrar los conocimientos que tengo en las
+                            distintas
+                            herramientas que existen. Además de tener un portafolio donde dejar mis
+                            proyectos."</span><span class="operator">;</span>
+                    </section>
+
+                    <section class="main-method">
+                        <span class="keyword">public static void</span>
+                        <span class="method">main</span>
+                        <span class="operator">(</span>
+                        <span class="class">String</span><span class="operator">[]</span>
+                        <span class="variable">args</span>
+                        <span class="operator">)</span>
+                        <span class="operator">{</span>
+                        <div class="tabular">
+                            <div class="tabular">
+
+                                <br>
+                                <span class="comment">// Ejecución de programa de curriculum.</span>
+                                <br>
+                                <span class="method">show</span>
+                                <span class="operator">(</span>
+                                <span class="constant">name</span>
+                                <span class="operator">,</span>
+                                <span class="constant">contenido</span>
+                                <span class="operator">)</span>
+                                <span class="operator">;</span>
+                                <br>
+                            </div>
+                            <span class="operator">}</span>
+                        </div>
+
+                    </section>
+                    <section class="show-method">
+                        <span class="keyword">private static void</span>
+                        <span class="method">show</span>
+                        <span class="operator">(</span>
+                        <span class="class">String</span>
+                        <span class="variable">name</span>
+                        <span class="operator">,</span>
+                        <span class="class">String</span>
+                        <span class="variable">contenido</span>
+                        <span class="operator">)</span>
+                        <span class="operator">{</span>
+
+                        <span class="operator">}</span>
+                    </section>
+                </div>
+                <section class="closing-brace">
+                    <span class="operator">}</span>
+                </section>
+            </div>
+            <div id="section2" class="content-section tabular">
+                <section class="package">
+                    <span class="keyword">package</span>
+                    <span class="namespace">org.curriculum</span>
+                    <span class="operator">;</span>
+                </section>
+                <section class="import">
+                    <span class="keyword">import</span>
+                    <span class="class">java.util.List</span>
+                    <span class="operator">;</span>
+                </section>
+                <section class="clase">
+                    <span class="keyword">public</span>
+                    <span class="keyword">class</span>
+                    <span class="class">Estudio</span>
+                    <span class="operator">{</span>
+                </section>
+                <div class="tabular">
+                    <section class="method">
+                        <span class="keyword">public</span>
+                        <span class="class">List&lt;Estudio&gt;</span>
+                        <span class="method">getEstudios</span>
+                        <span class="operator">()</span>
+                        <span class="operator">{</span>
+                    </section>
+                    <div class="tabular">
+                        <section class="variable-declaration">
+                            <span class="class">Universidad</span>
+                            <span class="variable">universidad</span>
+                            <span class="operator">=</span>
+                            <span class="keyword">new</span>
+                            <span class="class">CastillaLaMancha</span>
+                            <span class="operator">()</span>
+                            <span class="operator">;</span>
+                        </section>
+                        <section class="method-call">
+                            <span class="variable">universidad</span>
+                            <span class="operator">.</span>
+                            <span class="method">setEspecialidad</span>
+                            <span class="operator">(</span>
+                            <span class="string">"Tecnología de la Información"</span>
+                            <span class="operator">)</span>
+                            <span class="operator">;</span>
+                        </section>
+                        <section class="method-call">
+                            <span class="variable">universidad</span>
+                            <span class="operator">.</span>
+                            <span class="method">setLenguajePrincipal</span>
+                            <span class="operator">(</span>
+                            <span class="string">"JAVA"</span>
+                            <span class="operator">)</span>
+                            <span class="operator">;</span>
+                        </section>
+                        <section class="return-statement">
+                            <span class="keyword">return</span>
+                            <span class="variable">universidad</span>
+                            <span class="operator">.</span>
+                            <span class="method">estudiar</span>
+                            <span class="operator">()</span>
+                            <span class="operator">;</span>
+                        </section>
+                    </div>
+                    <section class="closing-brace">
+                        <span class="operator">}</span>
+                    </section>
+                </div>
+                <section class="closing-brace">
+                    <span class="operator">}</span>
+                </section>
+            </div>
+            <div id="section3" class="content-section tabular">
+                <section class="package">
+                    <span class="keyword">package</span>
+                    <span class="namespace">org.curriculum</span>
+                    <span class="operator">;</span>
+                </section>
+                <section class="import">
+                    <span class="keyword">import</span>
+                    <span class="class">java.util.Arrays</span>
+                    <span class="operator">;</span>
+                </section>
+                <section class="import">
+                    <span class="keyword">import</span>
+                    <span class="class">java.util.List</span>
+                    <span class="operator">;</span>
+                </section>
+                <section class="clase">
+                    <span class="keyword">public</span>
+                    <span class="keyword">class</span>
+                    <span class="class">Experiencia</span>
+                    <span class="operator">{</span>
+                </section>
+                <div class="tabular">
+                    <section class="method">
+                        <span class="keyword">public</span>
+                        <span class="class">List&lt;Experiencia&gt;</span>
+                        <span class="method">getExperiencia</span>
+                        <span class="operator">()</span>
+                        <span class="operator">{</span>
+                    </section>
+                    <div class="tabular">
+                        <section class="variable-declaration">
+                            <span class="class">Experiencia</span>
+                            <span class="variable">becarioUniversidad</span>
+                            <span class="operator">=</span>
+                            <span class="keyword">new</span>
+                            <span class="class">Experiencia</span>
+                            <span class="operator">()</span>
+                            <span class="operator">;</span>
+                        </section>
+                        <section class="method-call">
+                            <span class="variable">becarioUniversidad</span>
+                            <span class="operator">.</span>
+                            <span class="method">fechaInicioYfechaFin</span>
+                            <span class="operator">(</span>
+                            <span class="string">"ABRIL 2017"</span>
+                            <span class="operator">,</span>
+                            <span class="string">"JULIO 2017"</span>
+                            <span class="operator">)</span>
+                            <span class="operator">;</span>
+                        </section>
+                        <section class="variable-declaration">
+                            <span class="class">Experiencia</span>
+                            <span class="variable">becarioOficina</span>
+                            <span class="operator">=</span>
+                            <span class="keyword">new</span>
+                            <span class="class">Experiencia</span>
+                            <span class="operator">()</span>
+                            <span class="operator">;</span>
+                        </section>
+                        <section class="method-call">
+                            <span class="variable">becarioOficina</span>
+                            <span class="operator">.</span>
+                            <span class="method">fechaInicioYfechaFin</span>
+                            <span class="operator">(</span>
+                            <span class="string">"JUNIO 2018"</span>
+                            <span class="operator">,</span>
+                            <span class="string">"ENERO 2019"</span>
+                            <span class="operator">)</span>
+                            <span class="operator">;</span>
+                        </section>
+                        <section class="variable-declaration">
+                            <span class="class">Experiencia</span>
+                            <span class="variable">futureSpace</span>
+                            <span class="operator">=</span>
+                            <span class="keyword">new</span>
+                            <span class="class">Experiencia</span>
+                            <span class="operator">()</span>
+                            <span class="operator">;</span>
+                        </section>
+                        <section class="method-call">
+                            <span class="variable">futureSpace</span>
+                            <span class="operator">.</span>
+                            <span class="method">fechaInicioYfechaFin</span>
+                            <span class="operator">(</span>
+                            <span class="string">"FEBRERO 2019"</span>
+                            <span class="operator">,</span>
+                            <span class="string">"JUNIO 2019"</span>
+                            <span class="operator">)</span>
+                            <span class="operator">;</span>
+                        </section>
+                        <section class="variable-declaration">
+                            <span class="class">Experiencia</span>
+                            <span class="variable">pss</span>
+                            <span class="operator">=</span>
+                            <span class="keyword">new</span>
+                            <span class="class">Experiencia</span>
+                            <span class="operator">()</span>
+                            <span class="operator">;</span>
+                        </section>
+                        <section class="method-call">
+                            <span class="variable">pss</span>
+                            <span class="operator">.</span>
+                            <span class="method">fechaInicioYfechaFin</span>
+                            <span class="operator">(</span>
+                            <span class="string">"JULIO 2019"</span>
+                            <span class="operator">,</span>
+                            <span class="string">"ENERO 2020"</span>
+                            <span class="operator">)</span>
+                            <span class="operator">;</span>
+                        </section>
+                        <section class="variable-declaration">
+                            <span class="class">Experiencia</span>
+                            <span class="variable">vipera</span>
+                            <span class="operator">=</span>
+                            <span class="keyword">new</span>
+                            <span class="class">Experiencia</span>
+                            <span class="operator">()</span>
+                            <span class="operator">;</span>
+                        </section>
+                        <section class="method-call">
+                            <span class="variable">vipera</span>
+                            <span class="operator">.</span>
+                            <span class="method">fechaInicioYfechaFin</span>
+                            <span class="operator">(</span>
+                            <span class="string">"FEBRERO 2020"</span>
+                            <span class="operator">,</span>
+                            <span class="string">"SEPTIEMBRE 2021"</span>
+                            <span class="operator">)</span>
+                            <span class="operator">;</span>
+                        </section>
+                        <section class="variable-declaration">
+                            <span class="class">Experiencia</span>
+                            <span class="variable">keapps</span>
+                            <span class="operator">=</span>
+                            <span class="keyword">new</span>
+                            <span class="class">Experiencia</span>
+                            <span class="operator">()</span>
+                            <span class="operator">;</span>
+                        </section>
+                        <section class="method-call">
+                            <span class="variable">keapps</span>
+                            <span class="operator">.</span>
+                            <span class="method">fechaInicioYfechaFin</span>
+                            <span class="operator">(</span>
+                            <span class="string">"OCTUBRE 2021"</span>
+                            <span class="operator">,</span>
+                            <span class="string">"ABRIL 2023"</span>
+                            <span class="operator">)</span>
+                            <span class="operator">;</span>
+                        </section>
+                        <section class="variable-declaration">
+                            <span class="class">Experiencia</span>
+                            <span class="variable">indra</span>
+                            <span class="operator">=</span>
+                            <span class="keyword">new</span>
+                            <span class="class">Experiencia</span>
+                            <span class="operator">()</span>
+                            <span class="operator">;</span>
+                        </section>
+                        <section class="method-call">
+                            <span class="variable">indra</span>
+                            <span class="operator">.</span>
+                            <span class="method">fechaInicioYfechaFin</span>
+                            <span class="operator">(</span>
+                            <span class="string">"MAYO 2023"</span>
+                            <span class="operator">,</span>
+                            <span class="string">""</span>
+                            <span class="operator">)</span>
+                            <span class="operator">;</span>
+                        </section>
+                        <section class="return-statement">
+                            <span class="keyword">return</span>
+                            <span class="class">Arrays</span>
+                            <span class="operator">.</span>
+                            <span class="method">asList</span>
+                            <span class="operator">(</span>
+                            <span class="variable">becarioUniversidad</span>
+                            <span class="operator">,</span>
+                            <span class="variable">becarioOficina</span>
+                            <span class="operator">,</span>
+                            <span class="variable">futureSpace</span>
+                            <span class="operator">,</span>
+                            <span class="variable">pss</span>
+                            <span class="operator">,</span>
+                            <span class="variable">vipera</span>
+                            <span class="operator">,</span>
+                            <span class="variable">keapps</span>
+                            <span class="operator">,</span>
+                            <span class="variable">indra</span>
+                            <span class="operator">)</span>
+                            <span class="operator">;</span>
+                        </section>
+                    </div>
+                    <section class="closing-brace">
+                        <span class="operator">}</span>
+                    </section>
+                </div>
+                <div class="tabular">
+                    <section class="method">
+                        <span class="keyword">public void</span>
+                        <span class="method">fechaInicioYfechaFin</span>
+                        <span class="operator">(</span>
+                        <span class="class">String</span>
+                        <span class="variable">s</span>
+                        <span class="operator">,</span>
+                        <span class="class">String</span>
+                        <span class="variable">s1</span>
+                        <span class="operator">)</span>
+                        <span class="operator">{</span>
+                    </section>
+                    <section class="closing-brace">
+                        <span class="operator">}</span>
+                    </section>
+                </div>
+
+
+                <section class="closing-brace">
+                    <span class="operator">}</span>
+                </section>
+            </div>
+            <div id="section4" class="content-section tabular">
+                <section class="package">
+                    <span class="keyword">package</span>
+                    <span class="namespace">org.curriculum</span>
+                    <span class="operator">;</span>
+                </section>
+                <section class="import">
+                    <span class="keyword">import</span>
+                    <span class="class">java.util.Arrays</span>
+                    <span class="operator">;</span>
+                </section>
+                <section class="import">
+                    <span class="keyword">import</span>
+                    <span class="class">java.util.List</span>
+                    <span class="operator">;</span>
+                </section>
+                <section class="clase">
+                    <span class="keyword">public</span>
+                    <span class="keyword">class</span>
+                    <span class="class">Conocimiento</span>
+                    <span class="operator">{</span>
+                </section>
+                <div class="tabular">
+                    <section class="method">
+                        <span class="keyword">public</span>
+                        <span class="class">List&lt;Conocimiento&gt;</span>
+                        <span class="method">getConocimientos</span>
+                        <span class="operator">()</span>
+                        <span class="operator">{</span>
+                    </section>
+                    <div class="tabular">
+                        <section class="variable-declaration">
+                            <span class="class">Conocimiento</span>
+                            <span class="variable">becarioUniversidad</span>
+                            <span class="operator">=</span>
+                            <span class="keyword">new</span>
+                            <span class="class">Conocimiento</span>
+                            <span class="operator">()</span>
+                            <span class="operator">;</span>
+                        </section>
+                        <section class="method-call">
+                            <span class="variable">becarioUniversidad</span>
+                            <span class="operator">.</span>
+                            <span class="method">aprender</span>
+                            <span class="operator">(</span>
+                            <span class="string">"AUTODIDACTA"</span>
+                            <span class="operator">,</span>
+                            <span class="string">"PHP"</span>
+                            <span class="operator">,</span>
+                            <span class="string">"BOOSTRAP"</span>
+                            <span class="operator">,</span>
+                            <span class="string">"HTML"</span>
+                            <span class="operator">,</span>
+                            <span class="string">"JAVASCRIPT"</span>
+                            <span class="operator">)</span>
+                            <span class="operator">;</span>
+                        </section>
+                        <section class="variable-declaration">
+                            <span class="class">Conocimiento</span>
+                            <span class="variable">becarioOficina</span>
+                            <span class="operator">=</span>
+                            <span class="keyword">new</span>
+                            <span class="class">Conocimiento</span>
+                            <span class="operator">()</span>
+                            <span class="operator">;</span>
+                        </section>
+                        <section class="method-call">
+                            <span class="variable">becarioOficina</span>
+                            <span class="operator">.</span>
+                            <span class="method">aprender</span>
+                            <span class="operator">(</span>
+                            <span class="string">"ENTORNO PROFESIONAL"</span>
+                            <span class="operator">,</span>
+                            <span class="string">"MANTENIMIENTO"</span>
+                            <span class="operator">)</span>
+                            <span class="operator">;</span>
+                        </section>
+                        <section class="variable-declaration">
+                            <span class="class">Conocimiento</span>
+                            <span class="variable">futureSpace</span>
+                            <span class="operator">=</span>
+                            <span class="keyword">new</span>
+                            <span class="class">Conocimiento</span>
+                            <span class="operator">()</span>
+                            <span class="operator">;</span>
+                        </section>
+                        <section class="method-call">
+                            <span class="variable">futureSpace</span>
+                            <span class="operator">.</span>
+                            <span class="method">aprender</span>
+                            <span class="operator">(</span>
+                            <span class="string">"TRABAJO EN EQUIPO"</span>
+                            <span class="operator">,</span>
+                            <span class="string">"MANTENIMIENTO"</span>
+                            <span class="operator">,</span>
+                            <span class="string">"JAVA"</span>
+                            <span class="operator">,</span>
+                            <span class="string">"XML"</span>
+                            <span class="operator">,</span>
+                            <span class="string">"HTML"</span>
+                            <span class="operator">)</span>
+                            <span class="operator">;</span>
+                        </section>
+                        <section class="variable-declaration">
+                            <span class="class">Conocimiento</span>
+                            <span class="variable">pss</span>
+                            <span class="operator">=</span>
+                            <span class="keyword">new</span>
+                            <span class="class">Conocimiento</span>
+                            <span class="operator">()</span>
+                            <span class="operator">;</span>
+                        </section>
+                        <section class="method-call">
+                            <span class="variable">pss</span>
+                            <span class="operator">.</span>
+                            <span class="method">aprender</span>
+                            <span class="operator">(</span>
+                            <span class="string">"GESTION DE PROYECTO"</span>
+                            <span class="operator">,</span>
+                            <span class="string">"BASH"</span>
+                            <span class="operator">,</span>
+                            <span class="string">"MAVEN"</span>
+                            <span class="operator">,</span>
+                            <span class="string">"JAVA"</span>
+                            <span class="operator">,</span>
+                            <span class="string">"JSON"</span>
+                            <span class="operator">)</span>
+                            <span class="operator">;</span>
+                        </section>
+                        <section class="variable-declaration">
+                            <span class="class">Conocimiento</span>
+                            <span class="variable">vipera</span>
+                            <span class="operator">=</span>
+                            <span class="keyword">new</span>
+                            <span class="class">Conocimiento</span>
+                            <span class="operator">()</span>
+                            <span class="operator">;</span>
+                        </section>
+                        <section class="method-call">
+                            <span class="variable">vipera</span>
+                            <span class="operator">.</span>
+                            <span class="method">aprender</span>
+                            <span class="operator">(</span>
+                            <span class="string">"JAVA +8"</span>
+                            <span class="operator">,</span>
+                            <span class="string">"SPRING"</span>
+                            <span class="operator">,</span>
+                            <span class="string">"GRADLE"</span>
+                            <span class="operator">,</span>
+                            <span class="string">"RABBITMQ"</span>
+                            <span class="operator">,</span>
+                            <span class="string">"KAFKA"</span>
+                            <span class="operator">,</span>
+                            <span class="string">"JUNIT"</span>
+                            <span class="operator">,</span>
+                            <span class="string">"POSTMAN"</span>
+                            <span class="operator">,</span>
+                            <span class="string">"TEST DRIVING DEVELOPMENT"</span>
+                            <span class="operator">)</span>
+                            <span class="operator">;</span>
+                        </section>
+                        <section class="variable-declaration">
+                            <span class="class">Conocimiento</span>
+                            <span class="variable">keapps</span>
+                            <span class="operator">=</span>
+                            <span class="keyword">new</span>
+                            <span class="class">Conocimiento</span>
+                            <span class="operator">()</span>
+                            <span class="operator">;</span>
+                        </section>
+                        <section class="method-call">
+                            <span class="variable">keapps</span>
+                            <span class="operator">.</span>
+                            <span class="method">aprender</span>
+                            <span class="operator">(</span>
+                            <span class="string">"BBVA ARQUITECTURA"</span>
+                            <span class="operator">,</span>
+                            <span class="string">"SQL"</span>
+                            <span class="operator">,</span>
+                            <span class="string">"GIT"</span>
+                            <span class="operator">,</span>
+                            <span class="string">"CODE CLEAN"</span>
+                            <span class="operator">,</span>
+                            <span class="string">"SONAR"</span>
+                            <span class="operator">,</span>
+                            <span class="string">"JAVA"</span>
+                            <span class="operator">)</span>
+                            <span class="operator">;</span>
+                        </section>
+                        <section class="variable-declaration">
+                            <span class="class">Conocimiento</span>
+                            <span class="variable">indra</span>
+                            <span class="operator">=</span>
+                            <span class="keyword">new</span>
+                            <span class="class">Conocimiento</span>
+                            <span class="operator">()</span>
+                            <span class="operator">;</span>
+                        </section>
+                        <section class="method-call">
+                            <span class="variable">indra</span>
+                            <span class="operator">.</span>
+                            <span class="method">aprender</span>
+                            <span class="operator">(</span>
+                            <span class="string">"SPRING BATCH"</span>
+                            <span class="operator">,</span>
+                            <span class="string">"GESTION DE PROYECTO"</span>
+                            <span class="operator">,</span>
+                            <span class="string">"HABLAR CON CLIENTE"</span>
+                            <span class="operator">,</span>
+                            <span class="string">"MENTOR"</span>
+                            <span class="operator">)</span>
+                            <span class="operator">;</span>
+                        </section>
+                        <section class="return-statement">
+                            <span class="keyword">return</span>
+                            <span class="class">Arrays</span>
+                            <span class="operator">.</span>
+                            <span class="method">asList</span>
+                            <span class="operator">(</span>
+                            <span class="variable">becarioUniversidad</span>
+                            <span class="operator">,</span>
+                            <span class="variable">becarioOficina</span>
+                            <span class="operator">,</span>
+                            <span class="variable">futureSpace</span>
+                            <span class="operator">,</span>
+                            <span class="variable">pss</span>
+                            <span class="operator">,</span>
+                            <span class="variable">vipera</span>
+                            <span class="operator">,</span>
+                            <span class="variable">keapps</span>
+                            <span class="operator">,</span>
+                            <span class="variable">indra</span>
+                            <span class="operator">)</span>
+                            <span class="operator">;</span>
+                        </section>
+                    </div>
+                    <section class="closing-brace">
+                        <span class="operator">}</span>
+                    </section>
+                </div>
+                <div class="tabular">
+                    <section class="method">
+                        <span class="keyword">public void</span>
+                        <span class="method">aprender</span>
+                        <span class="operator">(</span>
+                        <span class="class">String</span>
+                        <span class="operator">...</span>
+                        <span class="variable">elem</span>
+                        <span class="operator">)</span>
+                        <span class="operator">{</span>
+                    </section>
+                    <section class="closing-brace">
+                        <span class="operator">}</span>
+                    </section>
+                </div>
+                <section class="closing-brace">
+                    <span class="operator">}</span>
+                </section>
+            </div>
+            <div id="section5" class="">
+
+                <button class="boton action-btn">
+                    <img class="icono" src="images/iconoPlay.png" alt="Play"
+                        style="width: 20px; height: 20px; vertical-align: middle;">
+                </button>
+            </div>
+        </div>
+
+        <div class="ventanaResultado" style="display: none;">
+
+            <div class="result">
+                <section class="intro">
+
+                    <button class="botonMenu botonIcono">
+                        <img src="images/boton-menu.png" alt="Menu">
+                    </button>
+                    <h1>David Santiago Lezama López</h1>
+                    <button class="botonAmpliar botonIcono">
+                        <img src="images/iconoAmpliar.png" alt="Ampliar">
+                    </button>
+                </section>
+                <section class="flex">
+                    <section class="sobreMi margenes mitad alinear">
+                        <h2>Sobre Mí</h2>
+                        <span>Soy una persona apasionada por la tecnología y el aprendizaje continuo. Me encanta
+                            enfrentar
+                            nuevos retos y encontrar soluciones innovadoras. Siempre estoy buscando oportunidades para
+                            mejorar mis habilidades y adquirir nuevos conocimientos.</span>
+                    </section>
+                    <section class="estudios margenes mitad alinear">
+                        <div class="estudios-section">
+                            <h2>Estudios</h2>
+                            <span>Escuela Superior de Informática de UCLM </span>
+                            <br>
+                            <span>Especialización en Tecnología de la Información</span>
+
+                        </div>
+                        <div class="logo-section">
+                            <img src="images/logoEsi.png" alt="Logo ESI">
+                            <img src="images/logo_uclm.png" alt="Logo UCLM">
+                        </div>
+                    </section>
+                </section>
+                <section class="experiencia margenes">
+                    <h2>Experiencia</h2>
+                    <div class="experiencia-item color1">
+                        <h3>ABRIL 2017 - JULIO 2017</h3>
+
+                        <p>Becario Universidad</p>
+                    </div>
+                    <div class="experiencia-item color2">
+                        <h3>JUNIO 2018 - ENERO 2019</h3>
+
+                        <p>Future Space - Becario Oficina</p>
+                    </div>
+                    <div class="experiencia-item color3">
+                        <h3>FEBRERO 2019 - JUNIO 2019</h3>
+
+                        <p>Future Space - Programador Junior</p>
+                    </div>
+                    <div class="experiencia-item color4">
+                        <h3>JULIO 2019 - ENERO 2020</h3>
+
+                        <p>PSS - Programador</p>
+                    </div>
+                    <div class="experiencia-item color5">
+                        <h3>FEBRERO 2020 - SEPTIEMBRE 2021</h3>
+
+                        <p>Vipera - Programador</p>
+                    </div>
+                    <div class="experiencia-item color6">
+                        <h3>OCTUBRE 2021 - ABRIL 2023</h3>
+
+                        <p>Keapps - Analista Programador</p>
+                    </div>
+                    <div class="experiencia-item color7">
+                        <h3>MAYO 2023 - Presente</h3>
+
+                        <p>Indra - Analista Programador</p>
+                    </div>
+                </section>
+
+                <div class="curriculum-content">
+                    <div class="conocimientos orange">
+                        <h2>Conocimientos</h2>
+
+                        <h3>Lenguajes de Programación y Marcado</h3>
+                        <div class="programacion-marcado">
+                            <div class="logoLengProgramacionMaracod">
+                                <img src="images/php-logo.png" alt="PHP Logo">
+                                <span> PHP</span>
+                            </div>
+                            <div class="logoLengProgramacionMaracod">
+                                <img src="images/html-logo.png" alt="HTML Logo">
+                                <span> HTML</span>
+                            </div>
+                            <div class="logoLengProgramacionMaracod">
+                                <img src="images/javascript-logo.png" alt="JavaScript Logo">
+                                <span> JavaScript</span>
+                            </div>
+                            <div class="logoLengProgramacionMaracod">
+                                <img src="images/java-logo.png" alt="Java Logo">
+                                <span> Java</span>
+                            </div>
+                            <div class="logoLengProgramacionMaracod">
+                                <img src="images/sql-logo.png" alt="SQL Logo">
+                                <span> SQL</span>
+                            </div>
+                            <div class="logoLengProgramacionMaracod">
+                                <img src="images/bash-logo.png" alt="Bash Logo">
+                                <span> Bash</span>
+                            </div>
+
+                            <div class="logoLengProgramacionMaracod">
+                                <img src="images/json-logo.png" alt="JSON Logo">
+                                <span> JSON</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="conocimientos morado">
+                        <h3>Frameworks y Librerías</h3>
+                        <div class="programacion-marcado">
+                            <div class="logoLengProgramacionMaracod">
+                                <img src="images/bootstrap-logo.png" alt="Bootstrap Logo">
+                                <span> Bootstrap</span>
+                            </div>
+                            <div class="logoLengProgramacionMaracod">
+                                <img src="images/spring-logo.png" alt="Spring Logo">
+                                <span> Spring</span>
+                            </div>
+                            <div class="logoLengProgramacionMaracod">
+                                <img src="images/junit-logo.png" alt="JUnit Logo">
+                                <span> JUnit</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="conocimientos gris">
+                        <h3>Herramientas y Tecnologías</h3>
+                        <div class="programacion-marcado">
+                            <div class="logoLengProgramacionMaracod">
+                                <img src="images/git-logo.png" alt="Git Logo">
+                                <span> Git</span>
+                            </div>
+                            <div class="logoLengProgramacionMaracod">
+                                <img src="images/maven-logo.png" alt="Maven Logo">
+                                <span> Maven</span>
+                            </div>
+                            <div class="logoLengProgramacionMaracod">
+                                <img src="images/gradle-logo.png" alt="Gradle Logo">
+                                <span> Gradle</span>
+                            </div>
+                            <div class="logoLengProgramacionMaracod">
+                                <img src="images/rabbitmq-logo.jpg" alt="RabbitMQ Logo">
+                                <span> RabbitMQ</span>
+                            </div>
+                            <div class="logoLengProgramacionMaracod">
+                                <img src="images/kafka-logo.png" alt="Kafka Logo">
+                                <span> Kafka</span>
+                            </div>
+                            <div class="logoLengProgramacionMaracod">
+                                <img src="images/postman-logo.png" alt="Postman Logo">
+                                <span> Postman</span>
+                            </div>
+                            <div class="logoLengProgramacionMaracod">
+                                <img src="images/sonar-logo.png" alt="Sonar Logo">
+                                <span> Sonar</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="conocimientos orange">
+                        <h2>Metodologías y Habilidades:</h2>
+                        <div class="programacion-marcado">
+                            <div class="logoLengProgramacionMaracod">
+                                <img src="images/tdd-logo.jpg" alt="TDD Logo">
+                                <span> Test Driven Development</span>
+                            </div>
+                            <div class="logoLengProgramacionMaracod">
+                                <img src="images/project-management-logo.jpg" alt="Gestión de Proyectos Logo">
+                                <span> Gestión de Proyectos</span>
+                            </div>
+                            <div class="logoLengProgramacionMaracod">
+                                <img src="images/teamwork-logo.jpg" alt="Trabajo en Equipo Logo">
+                                <span> Trabajo en Equipo</span>
+                            </div>
+                            <div class="logoLengProgramacionMaracod">
+                                <img src="images/mentoring-logo.png" alt="Mentoría Logo">
+                                <span> Mentoría</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </section>
+            </div>
+        </div>
+
+    </div>
+
+
+    </div>
+    <div class="aficiones">
+        <section class="introduccion">
+            <h1>Aficiones</h1>
+        </section>
+        <div class="musicaSpotify">
+            <iframe style="border-radius:0px"
+                src="https://open.spotify.com/embed/playlist/6pDrtQ1P5mJf4Or0CHWqEp?utm_source=generator" width="50%"
+                height="352" frameBorder="0" allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"></iframe>
+            <iframe style="border-radius:0px"
+                src="https://open.spotify.com/embed/artist/0du5cEVh5yTK9QJze8zA0C?utm_source=generator" width="50%"
+                height="352" frameBorder="0" allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"></iframe>
+        </div>
+
+    </div>
+</body>
+
+</html>

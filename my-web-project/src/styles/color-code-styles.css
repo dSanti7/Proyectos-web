@@ -1,0 +1,63 @@
+/*Colores de elementos internos*/
+.keyword {
+    color: #cc7832;
+    font-weight: bold;
+}
+
+.string {
+    color: #6a8759;
+}
+
+.comment {
+    color: #808080;
+    font-style: italic;
+}
+
+.constant {
+    color: #9876aa;
+}
+
+.number {
+    color: #6897bb;
+}
+
+.function {
+    color: #ffc66d;
+}
+
+.class {
+    color: #a9b7c6;
+    font-weight: bold;
+}
+.operator {
+    color: #a9b7c6;
+    font-weight: bold;
+}
+.interface {
+    color: #a9b7c6;
+    font-weight: bold;
+}
+
+.annotation {
+    color: #bbb529;
+}
+
+.parameter {
+    color: #629755;
+}
+
+.tag {
+    color: #e8bf6a;
+    font-weight: bold;
+}
+
+.attribute {
+    color: #a9b7c6;
+}
+.comment {
+    color: #808080;
+}
+
+.constant {
+    color: #9876aa;
+}    
